@@ -1,0 +1,16 @@
+[global]
+ioengine=libaio
+invalidate=1
+ramp_time=5
+size=1G
+runtime=60
+time_based
+
+[random-write]
+iodepth=1
+rw=randwrite
+bs=4k 
+filename=/dev/mydevice 
+write_bw_log=4k-randomwrite.results
+write_iops_log=4k-randomwrite.results
+write_lat_log=4k-randomwrite.results

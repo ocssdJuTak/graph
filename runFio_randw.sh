@@ -1,0 +1,1 @@
+fio --name=write --ioengine=libaio --iodepth=1 --rw=randwrite --bs=4k --runtime=120 --time_based --direct=0 --size=8G --group_reporting --filename=/dev/mydevice --write_bw_log=4k-randomwrite.results --write_iops_log=4k-randomwrite.results --write_lat_log=4k-randomwrite.results
